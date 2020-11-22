@@ -1,5 +1,4 @@
 import { z } from 'zorium'
-import React from 'react';
 import cookieLib from 'cookie'
 import LocationRouter from 'location-router'
 import socketIO from 'socket.io-client/dist/socket.io.slim.js'
@@ -8,7 +7,7 @@ import LanguageService from 'frontend-shared/services/language'
 import PortalService from 'frontend-shared/services/portal'
 import RouterService from 'frontend-shared/services/router'
 import WindowService from 'frontend-shared/services/window'
-import useCssVariables from 'frontend-shared/services/use_css_variables'
+import fontsCss from 'frontend-shared/components/head/fonts'
 
 import GlobalContext from '../src/context'
 import Lang from '../src/lang'
@@ -81,6 +80,7 @@ export const decorators = [
     return z(GlobalContext.Provider, {
       value: { model, router, portal, lang, cookie, browser, config, colors }
     }, [
+      z($fonts),
       z($cssVars),
       z($story)
     ])
@@ -91,5 +91,12 @@ function $cssVars () {
   return z('style', {
     type: 'text/css',
     innerHTML: `:root {${colors.getCssVariables()}}`
+  })
+}
+
+function $fonts () {
+  return z('style', {
+    type: 'text/css',
+    innerHTML: fontsCss
   })
 }

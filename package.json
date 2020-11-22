@@ -8,7 +8,8 @@
     "dev": "./bin/dev.sh",
     "postinstall": "sh -c \"./node_modules/are-you-es5/dist/cli.js check -r ./frontend-shared | tail -n 2 | head -n 1 > ./.non_es5 \"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -17,10 +18,13 @@
     "@storybook/addon-essentials": "^6.1.2",
     "@storybook/addon-links": "^6.1.2",
     "@storybook/preact": "^6.1.2",
+    "@storybook/react": "^6.1.2",
+    "@storybook/storybook-deployer": "^2.8.7",
     "are-you-es5": "^2.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.1",
     "babel-plugin-hyperscript-to-jsx": "^2.0.0",
+    "check-prop-types": "^1.1.2",
     "eslint": "^7.2.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.21.2",
