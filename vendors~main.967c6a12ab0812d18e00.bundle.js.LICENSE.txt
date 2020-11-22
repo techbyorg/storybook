@@ -1,0 +1,133 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * OverlayScrollbars
+ * https://github.com/KingSora/OverlayScrollbars
+ *
+ * Version: 1.13.0
+ *
+ * Copyright KingSora | Rene Haas.
+ * https://github.com/KingSora
+ *
+ * Released under the MIT license.
+ * Date: 02.08.2020
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * cookie
+ * Copyright(c) 2012-2014 Roman Shtylman
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*! https://mths.be/utf8js v2.1.2 by @mathias */
+
+/*! store2 - v2.12.0 - 2020-08-12
+* Copyright (c) 2020 Nathan Bubna; Licensed (MIT OR GPL-3.0) */
+
+/**
+ * Checks if an event is supported in the current execution environment.
+ *
+ * NOTE: This will not work correctly for non-generic events such as `change`,
+ * `reset`, `load`, `error`, and `select`.
+ *
+ * Borrows from Modernizr.
+ *
+ * @param {string} eventNameSuffix Event name, e.g. "click".
+ * @return {boolean} True if the event is supported.
+ * @internal
+ * @license Modernizr 3.0.0pre (Custom Build) | MIT
+ */
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
+ */
+
+/**
+ * qs-lite.js - Lightweight querystring parse() & stringify() at less than 1KB minified
+ *
+ * @module qs-lite
+ * @copyright Yusuke Kawasaki
+ * @license BSD
+ * @see https://github.com/kawanet/qs-lite
+ * @see http://kawanet.github.io/qs-lite/module-qs-lite.html
+ */
+
+/** @license React v0.19.1
+ * scheduler-tracing.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v0.19.1
+ * scheduler.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-dom.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+//! stable.js 0.1.8, https://github.com/Two-Screen/stable
+
+//! © 2018 Angry Bytes and contributors. MIT licensed.
