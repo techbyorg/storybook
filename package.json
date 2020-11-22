@@ -1,0 +1,52 @@
+{
+  "name": "storybook",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "dist": "./bin/dist.sh",
+    "start": "./bin/start.sh",
+    "dev": "./bin/dev.sh",
+    "postinstall": "sh -c \"./node_modules/are-you-es5/dist/cli.js check -r ./frontend-shared | tail -n 2 | head -n 1 > ./.non_es5 \"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/preact": "^6.1.2",
+    "are-you-es5": "^2.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.1",
+    "babel-plugin-hyperscript-to-jsx": "^2.0.0",
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "frontend-shared-dev": "github:techbyorg/frontend-shared-dev"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@babel/register": "^7.10.1",
+    "assert-none-missing": "github:claydotio/assert-none-missing#es",
+    "babel-plugin-replace-imports": "^1.0.2",
+    "frontend-shared": "file:src/frontend-shared",
+    "lodash": "^4.17.2",
+    "lodash-es": "^4.17.15",
+    "module-alias": "^2.2.2",
+    "rxjs": "^7.0.0-beta.0",
+    "zorium": "github:austinhallock/zorium#preact"
+  },
+  "_moduleAliases": {
+    "react": "node_modules/preact/compat/dist/compat.js",
+    "react-dom": "node_modules/preact/compat/dist/compat.js"
+  },
+  "author": "",
+  "version": "0.0.1"
+}

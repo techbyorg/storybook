@@ -1,0 +1,18 @@
+{
+  "home": "/",
+  "orgHome": "/org/:orgSlug",
+  "orgDashboard": "/org/:orgSlug/dashboard/:dashboardSlug",
+  "orgDashboardWithPartner": "/org/:orgSlug/partner/:partnerSlug/dashboard/:dashboardSlug",
+  "orgPartner": "/org/:orgSlug/partner/:partnerSlug",
+  "orgSignIn": "/org/:orgSlug/sign-in",
+  "orgInvite": "/org/:orgSlug/invite/:inviteTokenStr",
+  "orgPrivacy": "/org/:orgSlug/privacy",
+  "orgSettings": "/org/:orgSlug/settings",
+  "orgSettingsWithTab": "/org/:orgSlug/settings/:tab",
+  "orgShell": "/org/:orgSlug/cache-shell",
+
+  "invite": "/invite/:tokenStr",
+  "privacy": "/privacy",
+  "shell": "/cache-shell",
+  "fourOhFour": "/*"
+}
