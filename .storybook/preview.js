@@ -1,4 +1,5 @@
 import { z } from 'zorium'
+import * as Rx from 'rxjs'
 import cookieLib from 'cookie'
 import LocationRouter from 'location-router'
 import socketIO from 'socket.io-client/dist/socket.io.slim.js'
@@ -41,7 +42,6 @@ export const decorators = [
         document.cookie = cookieLib.serialize(key, value, options)
       }
     })
-    console.log('_---', config.ENVS.PROD, config.ENV)
     const lang = new LanguageService({
       language,
       cookie,
@@ -67,7 +67,7 @@ export const decorators = [
       apiUrl: config.API_URL,
       host: window.location.host
     })
-
+    model.auth.setOrgSlugStream(Rx.of('upchieve'))
     const router = new RouterService({
       model,
       cookie,
